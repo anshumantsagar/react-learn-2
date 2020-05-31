@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import classes from './Cockpit.css';
 
-const cockpit = props => {
+const Cockpit = props => {
   useEffect(() => {
     console.log('[Cockpit.js] useEffect');
     // Http request...
@@ -47,4 +47,4 @@ const cockpit = props => {
   );
 };
 
-export default React.memo(cockpit);
+export default React.memo(Cockpit);

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import classes from './App.css';
 import Persons from '../components/Persons/Persons';
 import Cockpit from '../components/Cockpit/Cockpit';
-import Aux from '../hoc/Auxilary'
 import withClass from '../hoc/withClass';
+import Aux from '../hoc/Auxilary';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends Component {
   state = {
     persons: [
       { id: 'asfa1', name: 'Anshumant', age: 22 },
-      { id: 'vasdf1', name: 'Anmol Dhiman', age: 21 },
+      { id: 'vasdf1', name: 'Anmol Dhiman', age: 22 },
       { id: 'asdf11', name: 'Ashutosh Sharma', age: 22 }
     ],
     otherState: 'some other value',
@@ -62,7 +62,7 @@ class App extends Component {
     persons[personIndex] = person;
 
     this.setState((prevState, props) => {
-      return{
+      return {
         persons: persons,
         changeCounter: prevState.changeCounter + 1
       };
